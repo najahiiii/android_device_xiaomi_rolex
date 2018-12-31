@@ -2211,6 +2211,10 @@ vendor/lib/libsmwrapper.so|6b705c8959c92a2f0d0420dbe79f80715357777f
 vendor/lib/libAlacSwDec.so|eabd64c99d7da57bd6efdd636c886ee5119f0850
 vendor/lib/libApeSwDec.so|53971de84faefa2fee6cd31d986258b337b4ccff
 vendor/lib/libFlacSwDec.so|44694506bd6528ec1ed1ebe2dc9f07d4dbb50f91
+vendor/lib/libMpeg4SwEncoder.so|971eb18b4209287f7c078c082508ebc46c11de0e 
+vendor/lib/libOmxSwVdec.so|3266ebc8499e38b21211942a2ec843c2eafe17ee 
+vendor/lib/libOmxSwVencMpeg4.so|91487e1059c8d412751b9a9e2edc74f2eb2863b1
+vendor/lib/libswvdec.so|a240b48b4c374d9418197d0f3dc3fccad6eee909
 -vendor/lib/libgpustats.so|c2b692956c1aef2a417da43e953041c348e1a33d
 vendor/lib/libOmxAacDec.so|7a43e1dc82dfe1f260c2be22f981bf8203624947
 vendor/lib/libOmxAlacDec.so|1b59f6f3d832348686fc4b2654bb69d752c31a67
@@ -2230,6 +2234,10 @@ vendor/lib/libvqzip.so|8cb780c0a2b43a8294d3591a85b9e7dcb0a2f712
 vendor/lib64/libAlacSwDec.so|4a288aededc9b995a5353ce6ee4521ec1b76d100
 vendor/lib64/libApeSwDec.so|1e7cc650a6a597c349a34639ee1998cb65e6ddbb
 vendor/lib64/libFlacSwDec.so|2c7f84f293c6b3be775f33b8cd3ce38c7881c65a
+vendor/lib/libMpeg4SwEncoder.so|971eb18b4209287f7c078c082508ebc46c11de0e 
+vendor/lib/libOmxSwVdec.so|3266ebc8499e38b21211942a2ec843c2eafe17ee 
+vendor/lib/libOmxSwVencMpeg4.so|91487e1059c8d412751b9a9e2edc74f2eb2863b1
+vendor/lib/libswvdec.so|a240b48b4c374d9418197d0f3dc3fccad6eee909
 -vendor/lib64/libgpustats.so|a84332549f1d99412fdd977af189cd8c0a15d79d
 vendor/lib64/libOmxAacDec.so|79631010bbc1e7cc0754caaffc4d7e9c7e802154
 vendor/lib64/libOmxAlacDec.so|57b555798aaa52823357948cf312a41c7db9796a
