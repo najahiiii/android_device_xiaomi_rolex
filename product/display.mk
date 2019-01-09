@@ -51,7 +51,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
     debug.enable.sglscale=1 \
-    debug.gralloc.enable_fb_ubwc=1 \
+    vendor.gralloc.enable_fb_ubwc=1 \
     debug.mdpcomp.logs=0 \
     debug.sdm.support_writeback=0 \
     debug.sf.hw=1 \
@@ -67,7 +67,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.cabl=0 \
     ro.sf.lcd_density=320 \
     sdm.debug.disable_rotator_split=1 \
-    sdm.debug.disable_skip_validate=1 \
+    vendor.display.disable_skip_validate=1 \
     sdm.perf_hint_window=50 \
     sys.display-size=3840x2160
 
