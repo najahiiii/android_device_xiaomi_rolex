@@ -2167,11 +2167,12 @@ vendor/lib64/libhdr_tm.so|516358f18c32e884237449e5b93ba6868e21938c
 # Graphics (SDM) - from marmite - OPM5.171019.017
 -vendor/lib/libsdm-disp-vndapis.so|41d866c7f7297b02a7d63bf499fa7ea21f422eca
 -vendor/lib64/libsdm-disp-vndapis.so|51e2bc8715992e4b1edc9b6da00d7736ea81e449
-vendor/lib/libscalar.so|af7161c0a4a941eb133f82fffde21d5ed79e1b2d
+vendor/lib/libqseed3.so
 vendor/lib/libsdm-color.so|97293223d9e0cc7387515a5090022d177d3821de
 vendor/lib/libsdm-diag.so|c33bdf9a0a4aa9f0385f3d6772b37fd9034fa169
 vendor/lib/libsdmextension.so|75b082c542b1c9e3d31a5f155a834b06b18a7588
 vendor/lib/libtinyxml2_1.so|75c2e17a4677bcb21d1ac1ed411b92820fdfa299
+vendor/lib64/libqseed3.so
 vendor/lib64/libscalar.so|778da7ece21c97b79e8486754f60e1cf7ebe11db
 vendor/lib64/libsdm-color.so|f6b415575c02a049362abcebf0ba5bc0b650cd2b
 vendor/lib64/libsdm-diag.so|b0578da9de5482f00201615a566e406de867865f
