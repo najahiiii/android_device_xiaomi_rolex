@@ -60,8 +60,6 @@ setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
-"$MY_DIR"/setup-makefiles.sh
-
 # Define blobs path for the following hax
 BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
@@ -72,3 +70,15 @@ sed -i "s|android.hardware.gnss@1.0.so|android.hardware.gnss@1.0-v27.so|g" $BLOB
 # Hax for camera configs
 CAMERA2_SENSOR_MODULES=$BLOB_ROOT/vendor/lib/libmmcamera2_sensor_modules.so
 sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "$CAMERA2_SENSOR_MODULES"
+
+# Hax for disable colorspace
+EGL_BLOB_1="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so 
+EGL_BLOB_2="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/egl/eglsubAndroid.so 
+EGL_BLOB_3="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/egl/libRBEGL_adreno.so 
+EGL_BLOB_4="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/egl/eglSubDriverAndroid.so 
+EGL_BLOB_5="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/egl/eglsubAndroid.so 
+EGL_BLOB_6="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/egl/libRBEGL_adreno.so
+
+sed -i "s|EGL_KHR_gl_colorspace|DIS_ABL_ED_colorspace|g" "$EGL_BLOB_1" "$EGL_BLOB_2" "$EGL_BLOB_3" "$EGL_BLOB_4" "$EGL_BLOB_5" "$EGL_BLOB_6"
+
+"$MY_DIR"/setup-makefiles.sh
