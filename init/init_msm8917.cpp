@@ -121,11 +121,7 @@ void check_device()
 
     if (buf.find("S88503") != std::string::npos) {
         model = "Redmi 4A";
-    } else {
-        model = "Redmi 5A";
-	property_set("ro.power_profile.override", "/vendor/etc/power_profile_riva.xml");
     }
-
 }
 
 
