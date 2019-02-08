@@ -1,0 +1,20 @@
+[
+    {
+        "remote": "github",
+        "repository": "najahiiii/android_vendor_xiaomi_rolex",
+        "target_path": "vendor/xiaomi/rolex",
+        "branch": "lineage-16.0"
+    },
+    {
+        "remote": "github",
+        "repository": "najahiiii/NgntdKernel_F",
+        "target_path": "kernel/xiaomi/msm8917",
+        "branch": "pure"
+    },
+    {
+        "remote": "github",
+        "repository": "LineageOS/android_packages_resources_devicesettings",
+        "target_path": "packages/resources/devicesettings",
+        "branch": "lineage-16.0"
+    }
+]
