@@ -54,8 +54,7 @@
     <ctl name="RX1 Digital Volume" value="84" />
     <ctl name="RX2 Digital Volume" value="84" />
     <ctl name="RX3 Digital Volume" value="84" />
-    <!-- +bug 308625, wujinfeng.wt, modify, 20171012, <ctl name="IIR？ INP？ Volume" value="53" /> the defalut value shoud be same with path's -->
-    <ctl name="IIR1 INP1 Volume" value="53" />
+    <ctl name="IIR1 INP1 Volume" value="84" />
     <ctl name="IIR1 INP2 Volume" value="84" />
     <ctl name="IIR1 INP3 Volume" value="84" />
     <ctl name="IIR1 INP4 Volume" value="84" />
@@ -976,10 +975,7 @@
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
-        <!-- +bug284939, cm-fushipan.wt, modify, 20170821, 来电铃声响起后插入耳机，先从右声道传出声音，之后再两个声道都传出 -->
-        <ctl name="Lineout_1 amp" value="ENABLE"/>
-        <ctl name="headset amp" value="ENABLE"/>
-        <!-- -bug284939, cm-fushipan.wt, modify, 20170821, 来电铃声响起后插入耳机，先从右声道传出声音，之后再两个声道都传出 -->
+        <ctl name="Lineout_1 amp" value="DUALMODE"/>
     </path>
 
     <path name="usb-headphones">
@@ -1186,3 +1182,4 @@
     </path>
 
 </mixer>
+
