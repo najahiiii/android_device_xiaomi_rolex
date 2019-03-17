@@ -4,7 +4,8 @@ PRODUCT_PACKAGES += \
     gps.msm8937 \
     libcurl \
     libgnss \
-    libgnsspps
+    libgnsspps \
+    libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/gps/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
