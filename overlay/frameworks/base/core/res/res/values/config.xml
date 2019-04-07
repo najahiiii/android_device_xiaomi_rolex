@@ -39,9 +39,11 @@
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>10</item> <!-- twilight -->
+        <item>30</item>
         <item>50</item> <!-- dim indoor -->
-        <item>100</item> <!-- home -->
-        <item>200</item> <!-- office -->
+        <item>80</item>
+        <item>120</item> <!-- home -->
+        <item>255</item> <!-- office -->
         <item>400</item>
         <item>500</item> <!-- sunrise -->
         <item>800</item>
@@ -57,8 +59,9 @@
          The brightness values must be between 0 and 255 and be non-decreasing.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>18</item> <!-- 0-10 -->
-        <item>28</item> <!-- 10-50 -->
+        <item>11</item> <!-- 0-10 -->
+        <item>18</item> <!-- 10-28 -->
+        <item>28</item> <!-- 28-50 -->
         <item>37</item> <!-- 50-100 -->
         <item>51</item> <!-- 100-200 -->
         <item>71</item> <!-- 200-400 -->
