@@ -16,6 +16,8 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
+    libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -24,7 +26,8 @@ PRODUCT_PACKAGES += \
     libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_soft_flacdec
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
