@@ -18,9 +18,13 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common LeanOS stuff
+$(call inherit-product, vendor/lean/config/common.mk)
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_GAPPS_ARCH := arm64
+LEAN_BUILD_TYPE := OFFICIAL
 
 # Inherit from rolex device
 $(call inherit-product, device/xiaomi/rolex/device.mk)
@@ -29,7 +33,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := rolex
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 4A
-PRODUCT_NAME := lineage_rolex
+PRODUCT_NAME := lean_rolex
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
